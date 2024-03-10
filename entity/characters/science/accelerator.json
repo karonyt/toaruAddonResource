@@ -1,0 +1,15 @@
+{
+  "format_version": "1.18.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "illumina:npc",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+		"a1": "textures/characters/science/accelerator" },
+      "geometry": { "default": "geometry.humanoid.custom" },
+      "render_controllers": [ "controller.render.human" ]
+    }
+  }
+}

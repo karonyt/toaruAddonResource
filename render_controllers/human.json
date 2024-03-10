@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.human": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [ "Texture.a1"]
+        },
+		"geometries": {
+			"Array.modelss": ["Geometry.default" ]
+		}
+      },
+      "geometry": "0",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[0]" ],
+	    "is_hurt_color" : {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+    }
+    }
+  }
+}
