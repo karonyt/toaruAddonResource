@@ -1,2 +1,5 @@
 item.spawn_egg.entity.karo:accelerator.name=spawn egg of accelerator
 entity.karo:accelerator.name=Accelerator
+
+item.spawn_egg.entity.karo:kamijou_toma.name=spawn egg of Toma Kamijo
+entity.karo:kamijou_toma.name=Toma Kamijo
