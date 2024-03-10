@@ -12,6 +12,25 @@
       "geometry": {
         "default": "geometry.humanoid.custom"
       },
+      "scripts": {
+        "scale": "1/170*v.height_cm",
+        "initialize": [
+          "v.height_cm = 191;",
+          "v.variant_animation = 0.0;",
+          "v.customSlim = 0.0;",
+          "v.is_first_person = 0.0;",
+          "v.controller = 0.0;"
+        ],
+        "pre_animation": [
+          "v.tcos0 = (Math.cos(q.modified_distance_moved * 38.17) * q.modified_move_speed / v.gliding_speed_value) * 57.3;"
+        ],
+        "animate": [
+          "look",
+          "move",
+          "attack",
+          "damage_nearby_mobs_set"
+        ]
+      },
       "animations": {
         "attack": "controller.animation.humanoid.attack",
         "damage_nearby_mobs_set": "controller.animation.humanoid.damage_nearby_mobs",
