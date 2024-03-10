@@ -10,7 +10,7 @@
         "a1": "textures/characters/kamijou_toma"
       },
       "geometry": {
-        "default": "geometry.humanoid.custom"
+        "default": "geometry.skin.new_custom"
       },
       "scripts": {
         "scale": "1/170*v.height_cm",
