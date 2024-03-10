@@ -3,3 +3,6 @@ entity.karo:accelerator.name=アクセラレータ
 
 item.spawn_egg.entity.karo:kamijou_toma.name=上条当麻のスポーンエッグ
 entity.karo:kamijou_toma.name=上条当麻
+
+item.spawn_egg.entity.karo:misaka_mikoto.name=御坂美琴のスポーンエッグ
+entity.karo:misaka_mikoto.name=御坂美琴
