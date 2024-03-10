@@ -7,9 +7,22 @@
         "default": "skeleton"
       },
       "textures": {
-		"a1": "textures/characters/science/accelerator" },
-      "geometry": { "default": "geometry.humanoid.custom" },
-      "render_controllers": [ "controller.render.human" ]
+        "a1": "textures/characters/science/accelerator"
+      },
+      "geometry": {
+        "default": "geometry.humanoid.custom"
+      },
+      "animations": {
+        "attack": "controller.animation.humanoid.attack",
+        "damage_nearby_mobs_set": "controller.animation.humanoid.damage_nearby_mobs",
+        "look": "animation.humanoid.look_at_target.default",
+        "move": "animation.humanoid.move",
+        "attack.rotations": "animation.drowned.attack.rotations",
+        "damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs"
+      },
+      "render_controllers": [
+        "controller.render.human"
+      ]
     }
   }
 }
