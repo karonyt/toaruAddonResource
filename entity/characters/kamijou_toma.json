@@ -13,7 +13,7 @@
         "default": "geometry.skin.new_custom"
       },
       "scripts": {
-        "scale": "1/170*v.height_cm",
+        "scale": "1/180*v.height_cm",
         "initialize": [
           "v.height_cm = 191;",
           "v.variant_animation = 0.0;",

@@ -2,12 +2,12 @@
   "format_version": "1.18.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "karo:accelerator",
+      "identifier": "karo:misaka_mikoto",
       "materials": {
         "default": "skeleton"
       },
       "textures": {
-        "a1": "textures/characters/science/accelerator"
+        "a1": "textures/characters/science/misaka_mikoto"
       },
       "geometry": {
         "default": "geometry.humanoid.custom"
