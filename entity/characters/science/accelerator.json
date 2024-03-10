@@ -2,7 +2,7 @@
   "format_version": "1.18.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "illumina:npc",
+      "identifier": "karo:accelerator",
       "materials": {
         "default": "skeleton"
       },
