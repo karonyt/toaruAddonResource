@@ -1,11 +1,11 @@
 {
   "reflection": {
-    "max_distance": 100,
+    "max_distance": 10,
     "sounds": [
       {
         "name": "sounds/sound/reflection",
         "stream": true,
-        "volume": 5,
+        "volume": 15,
         "load_on_low_memory": true
       }
     ]
