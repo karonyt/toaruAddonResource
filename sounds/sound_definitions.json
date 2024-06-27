@@ -9,5 +9,16 @@
         "load_on_low_memory": true
       }
     ]
+  },
+  "meltdowner.shot": {
+    "max_distance": 10,
+    "sounds": [
+      {
+        "name": "sounds/sound/meltdowner.shot",
+        "stream": true,
+        "volume": 1,
+        "load_on_low_memory": true
+      }
+    ]
   }
 }
