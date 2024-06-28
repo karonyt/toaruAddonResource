@@ -4,14 +4,14 @@
     "description": "とあるシリーズを再現したアドオンです\nmade by かろん",
     "name": "とある骨の拡張機能 Resource v.1.0",
     "uuid": "03bfc5ec-9ea8-40bf-a662-edff1a2ba6cc",
-    "version": [1, 0, 0]
+    "version": [1, 0, 1]
   },
   "modules": [
     {
       "description": "",
       "type": "resources",
       "uuid": "5d930a1b-90fd-4650-94a7-c1459b19d7ab",
-      "version": [1, 0, 0]
+      "version": [1, 0, 1]
     }
   ]
 }
