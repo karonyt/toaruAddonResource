@@ -1,11 +1,18 @@
 {
   "namespace": "test_ui",
   "main_panel": {
+    "type":"panel",
+    "controls": [
+      {
+        "main_label@test_ui.main_label": {}
+      }
+    ]
+  },
+  "main_label": {
     "type": "label",
     "anchor_from": "center",
     "anchor_to": "center",
-    "layer": 31,
     "text": "test",
-    "localize": false
+    "font_size": "large"
   }
 }
