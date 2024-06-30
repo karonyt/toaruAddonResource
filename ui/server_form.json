@@ -1,33 +1,5 @@
 {
 	"namespace": "server_form",
-	"third_party_server_screen@common.base_screen": {
-		"$screen_content": "server_form.main_screen_content",
-		"button_mappings": [
-			{
-				"from_button_id": "button.menu_cancel",
-				"to_button_id": "button.menu_exit",
-				"mapping_type": "global"
-			}
-		]
-	},
-	"main_screen_content": {
-		"type": "panel",
-		"size": [
-			0,
-			0
-		],
-		"controls": [
-			{
-				"server_form_factory": {
-					"type": "factory",
-					"control_ids": {
-						"long_form": "@server_form.long_form",
-						"custom_form": "@server_form.custom_form"
-					}
-				}
-			}
-		]
-	},
 	"long_form": {
 		"type": "panel",
 		"controls": [
@@ -99,12 +71,12 @@
 						},
 						{
 							"binding_type": "view",
-							"source_property_name": "(((#title_text - '§t§e§s§t') = #title_text))",
+							"source_property_name": "((#title_text - '§t§e§s§t') = #title_text)",
 							"target_property_name": "#visible"
 						}
 					]
 				},
-				"test_ui@test_ui.main_panel": {
+				"test_ui@test_ui.custom_form": {
 					"layer": 2,
 					"bindings": [
 						{
@@ -112,7 +84,7 @@
 						},
 						{
 							"binding_type": "view",
-							"source_property_name": "(not ((#title_text - '§t§e§s§t') = #title_text))",
+							"source_property_name": "(not (#title_text - '§t§e§s§t') = #title_text)",
 							"target_property_name": "#visible"
 						}
 					]
