@@ -240,7 +240,7 @@
         "$option_text_edit_control_size|default": [ "100%", "30px" ],
         "size": "$option_text_edit_control_size",
         "max_length": "$max_text_edit_length",
-        "$box_texture": "",aaa
+        "$box_texture": "textures/ui/test",
         "$text_edit_box_content_binding_name": "$option_binding_name",
         "$text_edit_box_binding_collection_name": "$option_binding_name",
         "$text_edit_box_binding_type": "global",
