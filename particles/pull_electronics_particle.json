@@ -47,7 +47,6 @@
 					}
 				}
 			},
-			"minecraft:particle_motion_collision": {},
 			"minecraft:particle_appearance_tinting": {
 				"color": [0.43529, 0.73725, 0.91373, 1]
 			}

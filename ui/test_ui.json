@@ -213,7 +213,7 @@
         ]
       },
     
-      "custom_input@test_ui.option_text_edit": {
+      "custom_input@server_form.option_text_edit": {
         "$option_label": "#custom_text",
         "$option_place_holder_text": "#custom_placeholder_text",
         "$text_edit_box_placeholder_content_binding_name": "$option_place_holder_text",
