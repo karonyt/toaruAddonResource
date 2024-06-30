@@ -1,6 +1,6 @@
 {
   "namespace": "test_ui",
-  "custom_form@common_dialogs.main_panel_no_buttons": {
+  "main_panel@common_dialogs.main_panel_no_buttons": {
     "$title_panel": "common_dialogs.standard_title_label",
     "$title_size": [
       "100% - 14px",
@@ -12,8 +12,18 @@
     ],
     "$text_name": "#title_text",
     "$title_text_binding_type": "none",
-    "$child_control": "server_form.custom_form_panel",
-    "layer": 2
+    "$child_control": "test_ui.custom_form_panel",
+    "layer": 2,
+    "bindings": [
+      {
+        "binding_name": "#title_text"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "((#title_text - '§t§e§s§t') = #title_text)",
+        "target_property_name": "#visible"
+      }
+    ]
   },
   "custom_form_panel@common.scrolling_panel": {
     "anchor_to": "top_left",
@@ -23,7 +33,7 @@
       "100%",
       "100%"
     ],
-    "$scrolling_content": "server_form.custom_form_scrolling_content",
+    "$scrolling_content": "test_ui.custom_form_scrolling_content",
     "$scroll_size": [
       5,
       "100% - 4px"
@@ -234,7 +244,7 @@
       }
     ]
   },
-  "custom_input@server_form.option_text_edit": {
+  "custom_input@test_ui.option_text_edit": {
     "$option_label": "#custom_text",
     "$option_place_holder_text": "#custom_placeholder_text",
     "$text_edit_box_placeholder_content_binding_name": "$option_place_holder_text",
@@ -251,6 +261,227 @@
         "binding_name": "#custom_text",
         "binding_type": "collection",
         "binding_collection_name": "custom_form"
+      }
+    ]
+  },
+  "option_generic": {
+    "type": "panel",
+    "$option_generic_panel_size|default": [
+      "100%",
+      "100%c"
+    ],
+    "size": "$option_generic_panel_size",
+    "$enabled|default": true,
+    "$option_enabled_binding_name|default": "",
+    "controls": [
+      {
+        "option_generic_core@test_ui.option_generic_core": {}
+      }
+    ]
+  },
+  "option_text_edit@test_ui.option_generic": {
+    "$option_place_holder_text|default": "",
+    "$max_text_edit_length|default": 30,
+    "$control_name": "settings_common.option_text_edit_control"
+  },
+  "option_generic_core": {
+    "$allow_data_binding|default": true,
+    "$option_label|default": "",
+    "$show_option_label|default": true,
+    "$label_bindings|default": [],
+    "$one_line_layout|default": false,
+    "$has_option_description|default": false,
+    "$option_description|default": "",
+    "$option_enabled_binding_type|default": "global",
+    "$option_label_alignment|default": "left",
+    "$label_offset|default": [
+      0,
+      0
+    ],
+    "type": "stack_panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "enabled": "$enabled",
+    "variables": [
+      {
+        "requires": "(not $enabled or not $option_enabled_binding_name)",
+        "$option_enabled_binding_type": "none",
+        "$option_enabled_binding_name": "#not_data_bound"
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "$option_enabled_binding_type",
+        "binding_name": "$option_enabled_binding_name",
+        "binding_name_override": "#enabled"
+      }
+    ],
+    "controls": [
+      {
+        "two_line_layout": {
+          "ignored": "($one_line_layout)",
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [
+            "100%",
+            "100%c"
+          ],
+          "controls": [
+            {
+              "option_label_panel": {
+                "type": "panel",
+                "size": [
+                  "100%",
+                  "100%c"
+                ],
+                "controls": [
+                  {
+                    "option_label": {
+                      "type": "label",
+                      "text_alignment": "$option_label_alignment",
+                      "color": "$main_header_text_color",
+                      "size": [
+                        "100%",
+                        "default"
+                      ],
+                      "offset": "$label_offset",
+                      "layer": 1,
+                      "text": "$option_label",
+                      "visible": "$show_option_label",
+                      "bindings": "$label_bindings",
+                      "locked_alpha": 0.5
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer": {
+                "type": "panel",
+                "visible": "$show_option_label",
+                "size": [
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "option_descriptive_text_0": {
+                "ignored": "(not $has_option_description)",
+                "type": "label",
+                "text_alignment": "$option_label_alignment",
+                "size": [
+                  "90%",
+                  "default"
+                ],
+                "min_size": [
+                  0,
+                  0
+                ],
+                "color": "$option_description_text_color",
+                "text": "$option_description",
+                "visible": "$show_option_label",
+                "anchor_from": "bottom_left",
+                "anchor_to": "bottom_left",
+                "locked_alpha": 0.5
+              }
+            },
+            {
+              "spacer2": {
+                "type": "panel",
+                "visible": "$show_option_label",
+                "size": [
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "$control_name@$control_name": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "one_line_layout": {
+          "ignored": "(not $one_line_layout)",
+          "type": "panel",
+          "$line_size|default": [
+            "100%",
+            "100%c - 16px + 2px"
+          ],
+          "$line_min_size|default": [
+            "100%",
+            "16px"
+          ],
+          "size": "$line_size",
+          "min_size": "$line_min_size",
+          "$label_size|default": [
+            "100% - 34px",
+            "default"
+          ],
+          "$label_offset|default": [
+            34,
+            3
+          ],
+          "controls": [
+            {
+              "$control_name@$control_name": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left"
+              }
+            },
+            {
+              "option_label": {
+                "type": "label",
+                "color": "$main_header_text_color",
+                "text_alignment": "$option_label_alignment",
+                "layer": 1,
+                "size": "$label_size",
+                "offset": "$label_offset",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "text": "$option_label",
+                "visible": "$show_option_label",
+                "bindings": "$label_bindings",
+                "locked_alpha": 0.5
+              }
+            },
+            {
+              "option_descriptive_text": {
+                "ignored": "(not $has_option_description)",
+                "type": "label",
+                "text_alignment": "$option_label_alignment",
+                "size": "$label_size",
+                "offset": "$label_offset",
+                "min_size": [
+                  0,
+                  0
+                ],
+                "color": "$option_description_text_color",
+                "text": "$option_description",
+                "visible": "$show_option_label",
+                "anchor_from": "bottom_left",
+                "anchor_to": "bottom_left",
+                "locked_alpha": 0.5
+              }
+            }
+          ]
+        }
+      },
+      {
+        "spacer": {
+          "type": "panel",
+          "size": [
+            0,
+            4
+          ]
+        }
       }
     ]
   },

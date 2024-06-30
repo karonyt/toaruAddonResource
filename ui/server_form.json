@@ -75,8 +75,10 @@
 							"target_property_name": "#visible"
 						}
 					]
-				},
-				"test_ui@test_ui.custom_form": {
+				}
+			},
+			{
+				"test_ui@test_ui.main_panel": {
 					"layer": 2,
 					"bindings": [
 						{
