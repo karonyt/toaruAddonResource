@@ -1,7 +1,0 @@
-{
-	"ui_defs": [
-		"ui/test_ui.json",
-		"ui/chest_server_form.json",
-		"ui/ui_common.json"
-	]
-}
