@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "karo:super_big_electronics_particle",
 			"basic_render_parameters": {
-				"material": "particles_alpha",
+				"material": "particles_add",
 				"texture": "textures/particle/electronics_particle"
 			}
 		},

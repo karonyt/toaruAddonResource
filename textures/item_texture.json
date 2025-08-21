@@ -1,0 +1,12 @@
+{
+  "resource_pack_name": "toaru",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "setting": {
+      "textures": "textures/items/setting"
+    },
+    "power": {
+      "textures": "textures/items/power/power"
+    }
+  }
+}
