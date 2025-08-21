@@ -6,3 +6,19 @@ entity.karo:kamijou_toma.name=上条当麻
 
 item.spawn_egg.entity.karo:misaka_mikoto.name=御坂美琴のスポーンエッグ
 entity.karo:misaka_mikoto.name=御坂美琴
+
+form.setting.toggle.label.isbreak=能力でのブロック破壊をオフ
+
+form.aerohand.setting.title=エアロハンドパラメータ調整
+form.aerohand.setting.button.horizontal.x=水平X方向強度
+form.aerohand.setting.button.horizontal.z=水平Z方向強度
+form.aerohand.setting.button.vertical=垂直方向強度
+form.aerohand.setting.button.maxlength=最大距離
+
+updated=§a更新しました
+
+item.mc:setting=設定
+
+item.mc:railgun_power_item=§6超電磁砲 §f/ §7右クリック
+item.mc:aerohand_power_item=エアロハンド §f/ §7右クリック
+item.mc:meltdowner_power_item=§a原子崩し §f/ §7右クリック
