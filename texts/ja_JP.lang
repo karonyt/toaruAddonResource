@@ -8,6 +8,7 @@ item.spawn_egg.entity.karo:misaka_mikoto.name=御坂美琴のスポーンエッ�
 entity.karo:misaka_mikoto.name=御坂美琴
 
 form.setting.toggle.label.isbreak=能力でのブロック破壊をオフ
+form.usersetting.toggle.label.camera=能力使用時のカメラワークをオン
 
 form.aerohand.setting.title=エアロハンドパラメータ調整
 form.aerohand.setting.button.horizontal.x=水平X方向強度
